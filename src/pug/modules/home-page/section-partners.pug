@@ -1,0 +1,21 @@
+mixin partners-item(img, text)
+    .partners-block__item.img-overlay
+        .partners-block__card
+            img(src=img).partners-block__img
+        .partners-block__info
+            span.partners-block__meta 12 грудня 2019
+            .partners-block__title=text
+                a(href="#").partners-block__link
+
+
+
+section.section
+    .container
+        h3.section-title
+            a(href="#").section-title__link Новини партнерів
+        .container-row
+            .partners-block
+                +partners-item('img/partners-1.jpg', 'Версія слідства: авто Шеремета мінувала дитячий хірург, допомагав – АТОвець\n')
+                +partners-item('img/partners-2.jpg', 'Другий термін Авакова. Як міністр часів Порошенка став незамінним при Зеленському')
+                +partners-item('img/partners-3.jpg', 'Слуга Кременчука: як ціни на автогаз можуть злетіти через завод Коломойського')
+                +partners-item('img/partners-4.jpg', 'У Конгресі США затвердили $300 млн оборонної допомоги Україні')

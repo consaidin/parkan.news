@@ -1,0 +1,34 @@
+mixin fedd-item(time)
+    .news-feed-item.news-feed-item__wrap
+        .news-feed-item__time
+            +icon('time-icon', 'clock')
+            span=time
+        a.news-feed-item__link(href="#") Прем'єр Молдови обговорить у Києві можливість купівлі газу в України
+
+
+
+section.section.section--top-news
+    .top-news-main
+        .container
+            .container-row.top-news(style=`background-image:url('img/main-bg.jpg');`)
+                .top-news__content
+                    .top-news__category Політика
+                    h1.top-news__title
+                        a(href="single.html").top-news__link Митрополит Епіфаній: За спиною Філарета грають деякі проросійські сили
+                    p.top-news__description Як так сталось, що митрополит Епіфаній став ворогом Філарета? Чому це відбулось? І чи вважає Епіфаній справедливим, що Філарету не дали очолити ПЦУ.
+                    .top-news__date Середа, 11 грудня 2019, 10:02
+    .news-feed
+        .container
+            .container-row.news-feed__wrap
+                +fedd-item('12:21')
+                +fedd-item('12:22')
+                +fedd-item('12:23')
+                +fedd-item('12:24')
+                +fedd-item('12:25')
+                +fedd-item('12:26')
+            .more-news
+                .more-news__wrap
+                    a(href="#").more-news__link Більше новин
+                    +icon('more-news__icon', 'rightarrow')
+
+

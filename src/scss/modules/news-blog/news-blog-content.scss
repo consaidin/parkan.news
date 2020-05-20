@@ -1,0 +1,201 @@
+@import "../../partials/mixins";
+@import "../../partials/params";
+@import "../../partials/elements";
+
+
+.news-blog {
+
+
+  &__item {
+    border-top: 1px solid #E5E5E5;
+    padding: 22px 0;
+
+    &:nth-of-type(1) {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    @include media(600) {
+      padding: 22px 0 32px;
+    }
+
+    @include media(1025) {
+      display: flex;
+    }
+  }
+
+  &__time-wrap {
+    margin-bottom: 12px;
+
+    @include media(1025) {
+      width: 35%;
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+  }
+
+  &__time {
+    font-size: px-to-rem(14);
+    font-weight: 600;
+    color: $main-red;
+    margin-right: 18px;
+
+    @include media(1025) {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__date {
+    font-size: px-to-rem(12);
+    color: #908E8E;
+
+  }
+
+  &__title {
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(17);
+    font-weight: 600;
+    margin-bottom: 8px;
+
+    @include media(801) {
+      font-size: px-to-rem(18);
+      line-height: px-to-rem(21);
+      font-weight: 700;
+    }
+
+  }
+
+  &__description {
+    display: none;
+    font-size: px-to-rem(13);
+    line-height: px-to-rem(17);
+    color: #545050;
+    font-weight: 300;
+
+    @include media(801) {
+      display: block;
+    }
+  }
+}
+
+//Pagination!!!//
+.pagination-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.page-numbers {
+  background: #E5E5E5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.page-numbers.current {
+  background: $main-red;
+  color: $white;
+  font-weight: 600;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.75);
+}
+
+.page-numbers.dots {
+  background: none;
+  width: 12px;
+  margin-right: 12px;
+}
+
+.page-next-icon {
+  width: 18px;
+  height: 12px;
+  fill: $white;
+
+}
+
+.next.page-numbers {
+  background: $main-light-blue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

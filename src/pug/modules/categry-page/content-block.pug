@@ -1,0 +1,41 @@
+mixin content-page-item()
+    .content-page-item
+        .content-page-item__info
+            h3.content-page-item__title
+                a(href="#").content-page-item__link Нардеп Микола Сольський: Усі зможуть купувати більше 100 гектарів землі через родичів, коханок чи партнерів
+            .content-page-item__description Купити чи продати землю можна буде уже через рік, проте це ще не все. Як працюватиме "пріоритетне право", чому продаж-купівлю державної землі відмінили в останню мить, і хто
+            span.content-page-item__meta 30 квітня 2020, 09:27 — Костянтин Лебедюк
+        .content-page-item__img-wrap
+            a(href="#").content-page-item__link-img
+                .img-overlay
+                    img(src="img/category-img.jpg").content-page-item__img
+
+
+
+.content-page
+    .container
+        .container-row.content-page__wrap
+            .content-page__block
+                h1.section-title
+                    a(href="#").section-title__link Події в Україні
+                +content-page-item()
+                +content-page-item()
+                +content-page-item()
+                +content-page-item()
+                .pagination-wrap
+                    span.page-numbers.current
+                        | 1
+                    a.page-numbers(href='#!')
+                        | 2
+                    span.page-numbers.dots …
+                    a.page-numbers(href='#!')
+                        | 86
+                    a.page-numbers(href='#!')
+                        | 87
+                    a.next.page-numbers(href='#!')
+                        +icon('page-next-icon','right-arrow-light')
+
+
+
+            .content-page__aside
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet assumenda ea est exercitationem facere facilis illo illum ipsum laboriosam laudantium, magnam maiores nam necessitatibus nihil nulla obcaecati placeat, praesentium quae quaerat quas quia quidem, quos sed veritatis voluptatem. Accusantium adipisci alias aliquid consequuntur cum deserunt dicta fugit iure iusto, labore laboriosam minima modi molestias nihil nostrum numquam odit officiis optio provident quam quasi quidem rem soluta veritatis vero, vitae voluptatibus! Accusamus expedita maxime nisi qui quod rerum voluptate! Aut beatae harum, incidunt laudantium modi necessitatibus nihil non recusandae rem. Eius hic illum placeat quam veniam! Aliquam commodi consequuntur deleniti dicta dolores eius, eligendi esse excepturi fuga harum impedit in itaque laudantium nulla, praesentium quas quibusdam sint ullam vero voluptas! A at, consectetur ea enim et, expedita id magni, odit perferendis quo quod rem repellendus sint totam voluptate. Amet ducimus, est explicabo fuga incidunt laboriosam nostrum obcaecati rerum sunt voluptatum? Aperiam autem beatae blanditiis commodi consequatur debitis deleniti dignissimos dolore doloremque eaque fugit ipsam iure laudantium, minima modi natus non nulla obcaecati pariatur perferendis possimus quas quod, ratione rerum, saepe totam ullam vitae. Adipisci blanditiis commodi consequatur culpa deserunt distinctio doloribus error et exercitationem explicabo facilis harum id iure laboriosam laborum maxime minus modi nesciunt nulla omnis pariatur placeat praesentium quae quasi, quisquam quo recusandae similique sint soluta ut. Delectus, impedit.

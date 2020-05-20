@@ -1,0 +1,19 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@function px-to-rem($size, $basicSize: 16px) {
+  $size: $size + 0px;
+  @return $size / $basicSize#{rem};
+}
+
+@mixin media($size) {
+  @media only screen and (min-width: $size+'px') {
+    @content;
+  }
+}

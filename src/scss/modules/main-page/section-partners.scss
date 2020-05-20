@@ -1,0 +1,108 @@
+@import "../../partials/mixins";
+@import "../../partials/params";
+@import "../../partials/elements";
+
+.partners-block {
+
+  @include media(480) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 0 15px 15px 15px;
+    position: relative;
+
+
+    @include media(480) {
+      width: calc(100% / 12 * 6 - 30px);
+    }
+
+    @include media(801) {
+      width: calc(100% / 12 * 3 - 30px);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    min-height: 200px;
+  }
+
+  &__card {
+    position: relative;
+  }
+
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: $white;
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__title {
+    font-size: px-to-rem(16);
+    line-height: px-to-rem(22);
+
+
+  }
+
+  &__link {
+    color: $white;
+    line-height: px-to-rem(22);
+
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      content: '';
+
+    }
+  }
+
+  &__meta {
+    font-size: px-to-rem(12);
+    line-height: px-to-rem(14);
+    font-weight: 300;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,185 @@
+@import "../../partials/mixins";
+@import "../../partials/params";
+@import "../../partials/elements";
+
+
+.container {
+
+  &--banner {
+    background: linear-gradient(90deg, #D8004A 0.59%, #C7D0F4 100%);
+    margin: 0 15px;
+  }
+}
+
+.banner {
+
+
+  &__wrap {
+
+    background-image: url('../img/network.png');
+    background-size: cover;
+    background-position: center right;
+    padding: 18px 15px;
+
+    @include media(801) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+
+    @include media(801) {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    @include media(1025) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__icon-text {
+    margin-right: 15px;
+
+
+    @include media(1281) {
+      margin-right: 34px;
+    }
+  }
+
+  &__icon-prev {
+    width: 62px;
+    height: 62px;
+    fill: rgba($white, .7);
+    display: none;
+
+    @include media(1025) {
+      display: block;
+    }
+
+  }
+
+  &__title {
+    display: block;
+    font-size: px-to-rem(16);
+    line-height: px-to-rem(22);
+    font-weight: 600;
+
+    @include media(480) {
+      font-size: px-to-rem(24);
+      line-height: px-to-rem(30);
+    }
+
+    @include media(801) {
+      font-size: px-to-rem(26);
+      line-height: px-to-rem(32);
+    }
+
+    @include media(1025) {
+      font-size: px-to-rem(30);
+      line-height: px-to-rem(36);
+    }
+
+    @include media(1281) {
+      font-size: px-to-rem(32);
+      line-height: px-to-rem(37);
+      letter-spacing: .08em;
+    }
+  }
+
+  &__subtitle {
+    line-height: px-to-rem(22);
+    font-weight: 300;
+
+    @include media(480) {
+      font-size: px-to-rem(20);
+      line-height: px-to-rem(26);
+    }
+
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-around;
+
+
+    @include media(801) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__icon-wrap {
+    background: transparent;
+    border: 1px solid $white;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @include media(600) {
+      margin-left: 10px;
+    }
+
+    @include media(801) {
+      margin-left: 35px;
+    }
+  }
+
+  &__icon {
+    width: 28px;
+    height: 28px;
+    fill: $white;
+  }
+
+  &__icon-link {
+
+    display: block;
+    
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

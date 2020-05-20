@@ -1,0 +1,20 @@
+extends templates/main-template
+block variables
+    - var pageTitle = 'ParkanNews'
+block content
+    include modules/header
+    main.main
+        include modules/home-page/section-top-news
+        include modules/home-page/section-actual
+        include modules/home-page/subscribe-block
+        include modules/home-page/section-trends
+        include modules/home-page/section-video
+        include modules/home-page/section-comments
+        include modules/home-page/banner
+        include modules/home-page/section-partners
+    include modules/footer
+
+
+
+
+

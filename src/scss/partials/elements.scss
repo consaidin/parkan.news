@@ -1,0 +1,119 @@
+@import "params";
+@import "mixins";
+
+
+//Img Overlay layer
+
+.img-overlay {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($main-black, .45);
+    transition-duration: .6s;
+    transition-property: background-color;
+
+
+  }
+  &:hover::after {
+    background-color: rgba($main-black, .75);
+  }
+}
+
+.section-title {
+  font-size: px-to-rem(22);
+  line-height: px-to-rem(26);
+  margin: 0 0 45px 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+
+  &__link {
+    color: $main-black;
+    text-decoration: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 48px;
+    height: 4px;
+    background: $main-blue;
+
+  }
+}
+
+
+//Button More
+
+.more-news {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 22px;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__link {
+    font-size: px-to-rem(12);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 5px;
+    transition-duration: .4s;
+    transition-property: color;
+
+    &:hover {
+      color: $main-blue;
+    }
+  }
+
+  &__icon {
+    width: 22px;
+    height: 22px;
+    fill: $main-red;
+
+  }
+
+  &--video {
+    margin: 42px 15px 0 0;
+
+    @include media(1025) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,250 @@
+@import "partials/mixins";
+@import "partials/params";
+@import "partials/elements";
+
+.header-top-bg {
+  background-color: $main-blue;
+  padding: 15px 0;
+
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  &__logo {
+
+    img {
+      height: 18px;
+    }
+
+    span {
+      color: $white;
+      font-size: px-to-rem(13);
+      font-weight: 300;
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+
+  }
+
+  &__time {
+    display: none;
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(17);
+    color: $white;
+    font-weight: 300;
+
+    span {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: -18px;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background: $main-light-blue;
+      }
+    }
+  }
+
+  &__search-icon {
+    width: 22px;
+    height: 22px;
+    fill: $white;
+
+  }
+}
+
+.nav {
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  &__link {
+    color: $white;
+    font-size: px-to-rem(12);
+    line-height: px-to-rem(15);
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: '';
+      bottom: -17px;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: $main-light-blue;
+    }
+
+  }
+
+}
+
+.current-menu-item {
+  &::after {
+    display: block;
+  }
+}
+
+.header-bottom {
+  font-weight: 300;
+  font-size: px-to-rem(12);
+  padding: 10px 0;
+  background: $white;
+  box-shadow: 0 4px 8px rgba($black, .12);
+}
+
+
+
+@include media(480) {
+  .header-top {
+
+    &__time {
+      display: block;
+    }
+  }
+}
+
+@include media(801) {
+  .header-top {
+
+    &__burger {
+      display: none;
+    }
+
+    &__nav {
+      display: block;
+    }
+  }
+}
+
+@include media(1025) {
+  .header-top {
+    &__logo {
+
+      img {
+        height: 26px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    &__time {
+
+      span {
+
+        &::after {
+          bottom: -27px;
+
+        }
+      }
+    }
+  }
+
+  .nav {
+    &__link {
+      font-size: px-to-rem(15);
+      line-height: px-to-rem(18);
+    }
+
+    .current-menu-item {
+      &::after {
+        bottom: -26px;
+      }
+    }
+  }
+}
+/////////FIXED
+
+.header-fixed {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  transition: transform .3s ease;
+  z-index: 3;
+}
+.header-fixed > .out{
+  transform: translateY(-100%);
+}
+
+//.bottom-out {
+//  transform: translateY(-350%);
+//
+//}
+//
+//.header-top-bg {
+//  transition: transform .3s ease;
+//}
+//
+//.header-bottom {
+//  transition: transform .9s ease;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

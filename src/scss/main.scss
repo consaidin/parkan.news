@@ -1,0 +1,92 @@
+@import "partials/mixins";
+@import "partials/params";
+@import "partials/elements";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: $main-black;
+  height: 100%;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'opensans', 'Arial', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $main-black;
+}
+
+.section {
+  margin: 48px 0;
+  @include media(801) {
+    margin-bottom: 50px;
+  }
+}
+
+.container {
+  max-width: $container-size;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-row {
+  margin: 0 -15px;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

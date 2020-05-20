@@ -1,0 +1,7 @@
+extends templates/main-template
+block variables
+    - var pageTitle = 'ParkanNews/news'
+block content
+    include modules/header
+    main.main
+        include modules/blog-news/blog-news-content

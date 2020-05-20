@@ -1,0 +1,297 @@
+@import "../../partials/mixins";
+@import "../../partials/params";
+@import "../../partials/elements";
+
+.article-post {
+
+  &__title {
+    font-size: px-to-rem(22);
+    line-height: px-to-rem(26);
+    margin-top: 18px;
+
+    @include media(600) {
+      font-size: px-to-rem(24);
+      line-height: px-to-rem(28);
+    }
+
+    @include media(801) {
+      font-size: px-to-rem(26);
+      line-height: px-to-rem(32);
+    }
+  }
+
+  &__meta {
+    font-size: px-to-rem(12);
+    line-height: px-to-rem(16);
+    color: #908E8E;
+    margin: 12px 0;
+
+    @include media(480) {
+      display: flex;
+      justify-content: space-between;
+      margin: 18px 0 12px;
+    }
+  }
+
+  &__views {
+    display: flex;
+    align-items: center;
+  }
+
+  &__date {
+    margin-bottom: 4px;
+    @extend .article-post__views;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.views-icon {
+  width: 14px;
+  height: 14px;
+  fill: #908E8E;
+  margin-right: 8px;
+}
+
+.article-clock {
+  @extend .views-icon;
+}
+
+.article-post-inner {
+  background: #F1F2F6;
+  padding: 18px 18px 24px;
+  border-top: 4px solid $main-red;
+  margin: 18px 0;
+
+
+  @include media(375) {
+    width: 40%;
+    float: left;
+    margin: 22px 22px 22px 0;
+  }
+
+  @include media(600) {
+    width: 35%;
+  }
+
+  @include media(801) {
+    width: 28%;
+  }
+
+  &__wrap {
+    position: relative;
+    transition-duration: .7s;
+    transition-property: color;
+
+    &:hover {
+      color: $main-blue;
+    }
+  }
+
+  &__title {
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(16);
+    text-transform: uppercase;
+    color: $main-red;
+    font-weight: 600;
+    margin-bottom: 12px;
+
+  }
+
+  &__img {
+    @extend .article-post__img;
+  }
+
+  &__link {
+    display: block;
+    line-height: px-to-rem(19);
+    padding-top: 22px;
+    font-weight: 700;
+
+  }
+}
+
+.article-tags {
+  display: flex;
+  margin: 22px 0;
+  padding: 22px 0;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+
+  &__title {
+    color: $main-blue;
+    font-weight: 400;
+
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    background: #E5E5E5;
+    border-radius:4px;
+    margin-left: 12px;
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    display: block;
+    padding: 4px 8px;
+    font-size: px-to-rem(12);
+    line-height: px-to-rem(16);
+    transition-property: color;
+    transition-duration: .7s;
+
+    &:hover {
+      color: $main-red;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

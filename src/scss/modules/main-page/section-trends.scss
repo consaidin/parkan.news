@@ -1,0 +1,119 @@
+@import "../../partials/mixins";
+@import "../../partials/params";
+@import "../../partials/elements";
+
+.top-block {
+
+  &--trends {
+    flex-direction: row-reverse;
+
+  }
+
+
+}
+
+.bottom-trends {
+
+  &__item {
+    margin: 0 15px 20px 15px;
+    position: relative;
+
+
+    @include media(600) {
+      width: calc(100% / 12 * 6 - 30px);
+
+    }
+
+    @include media(1024) {
+      width: calc(100% / 12 * 3 - 30px);
+
+    }
+  }
+
+  &__link {
+    display: block;
+    transition-duration: .6s;
+    transition-property: color;
+
+    &:hover {
+      color: $main-blue;
+    }
+  }
+
+  &__category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $main-blue;
+    color: $white;
+    z-index: 1;
+    padding: 11px 17px;
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(16);
+    
+  }
+  
+
+  &__img {
+    width: 100%;
+    display: block;
+    background-color: $main-black;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: px-to-rem(16);
+    line-height: px-to-rem(20);
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(18);
+    color: #908E8E;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

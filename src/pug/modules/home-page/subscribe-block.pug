@@ -1,0 +1,12 @@
+.banner-subscribe.section
+    .container
+        .container-row.subscribe-wrap
+            .subscribe-text
+                .subscribe-text__title Хочеш отримати більше новин
+                   span parkan.news ?
+                span.subscrib-text__text Підписуйся на нашу розсилку
+            .subscribe-form
+                +icon('subscribe-form__icon', 'post-card')
+                form(method="post" action="/").subscribe-form__wrap
+                    input(type="email" placeholder="Введіть свій Email" value="" name="").subscribe-form__input
+                    input(type="submit" value="Підписатись" name="").subscribe-form__button

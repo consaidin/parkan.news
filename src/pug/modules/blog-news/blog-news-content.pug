@@ -1,0 +1,37 @@
+mixin news-blog-item
+    .news-blog__item
+        .news-blog__time-wrap
+            span.news-blog__time 09:27
+            span.news-blog__date 19 травня 2020
+        .news-block__text
+            h3.news-blog__title
+                a(href="#").content-page-item__link Нардеп Микола Сольський: Усі зможуть купувати більше 100 гектарів землі через родичів, коханок чи партнерів
+            .news-blog__description Купити чи продати землю можна буде уже через рік, проте це ще не все. Як працюватиме "пріоритетне право", чому продаж-купівлю державної землі відмінили в останню мить, і хто
+
+
+.content-page
+    .container
+        .container-row.content-page__wrap
+            .content-page__block
+                h1.section-title.section-title--page
+                    a(href="#").section-title__link Новини
+                +news-blog-item
+                +news-blog-item
+                +news-blog-item
+
+                .pagination-wrap
+                    span.page-numbers.current
+                        | 1
+                    a.page-numbers(href='#!')
+                        | 2
+                    span.page-numbers.dots …
+                    a.page-numbers(href='#!')
+                        | 86
+                    a.page-numbers(href='#!')
+                        | 87
+                    a.next.page-numbers(href='#!')
+                        +icon('page-next-icon','right-arrow-light')
+
+
+
+            .content-page__aside

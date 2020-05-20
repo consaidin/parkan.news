@@ -1,0 +1,105 @@
+@import "partials/mixins";
+@import "partials/params";
+@import "partials/elements";
+
+.header-top {
+
+  &__burger {
+    flex-basis: 34px;
+    flex-shrink: 0;
+    cursor: pointer;
+
+    span {
+      display: block;
+      background: $white;
+      height: 3px;
+      border-radius: 4px;
+      width: 100%;
+      margin-bottom: 4px;
+
+      &:nth-of-type(2) {
+        width: 45%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
