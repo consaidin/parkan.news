@@ -15,7 +15,7 @@
 .bottom-trends {
 
   &__item {
-    margin: 0 15px 20px 15px;
+    margin: 0 15px 38px 15px;
     position: relative;
 
 
@@ -26,7 +26,7 @@
 
     @include media(1024) {
       width: calc(100% / 12 * 3 - 30px);
-
+      margin: 0 15px;
     }
   }
 
@@ -44,13 +44,23 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: $main-blue;
-    color: $white;
     z-index: 1;
+
+  }
+
+  &__category-link {
+    display: block;
     padding: 11px 17px;
+    color: $white;
     font-size: px-to-rem(14);
     line-height: px-to-rem(16);
-    
+    background-color: $main-blue;
+    transition-duration: .6s;
+    transition-property: background-color;
+
+    &:hover {
+      background-color: darken($main-blue, 8%);
+    }
   }
   
 

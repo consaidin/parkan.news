@@ -1,7 +1,8 @@
 mixin trends-item(img,title,text)
     .bottom-trends__item
+        span.bottom-trends__category
+            a(href="category-page.html").bottom-trends__category-link Суспільство
         a(href="#").bottom-trends__link
-            span.bottom-trends__category Суспільство
             .img-overlay
                 img(src=img).bottom-trends__img
             h4.bottom-trends__title=title
