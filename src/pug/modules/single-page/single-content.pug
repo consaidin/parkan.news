@@ -38,6 +38,32 @@ mixin tags-item(text)
                     +tags-item('#Офіс президента України')
                     +tags-item('#Офіс президента України')
             .articles-proposition
+            .comments-area
+                .comment-respond
+                    h3.comment-reply-title Залиште коментар
+                    form(method='post').comment-form
+                        p.comment-notes
+                            span#email-notes Ваша e-mail адреса не оприлюднюватиметься. Обов’язкові поля позначені
+                            span.required *
+                        p.comment-form-comment
+                            label Коментар
+                            textarea#comment(required="required" placeholder="Что думаете?")
+                        p.comment-form-author
+                            label Ім’я
+                                span.required *
+                            input#author(type='text' value='' maxlength='245')
+                        p.comment-form-email
+                            label Email
+                                span.required *
+                            input#email(type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required")
+                        p.comment-form-url
+                            label Website
+                            input#url(name="url" type="url" value="" size="30" maxlength="200")
+                        p.form-submit
+                            input#submit.submit(value="Post Comment")
+                            input#comment_post_ID(type="hidden" name="comment_post_ID" value="638")
+                            input#comment_parent(type="hidden" name="comment_parent" value="0")
+
 
 
         .content-page__aside

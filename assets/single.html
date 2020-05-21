@@ -78,6 +78,35 @@
               </ul>
             </div>
             <div class="articles-proposition"></div>
+            <div class="comments-area">
+              <div class="comment-respond">
+                <h3 class="comment-reply-title">Залиште коментар</h3>
+                <form class="comment-form" method="post">
+                  <p class="comment-notes"><span id="email-notes">Ваша e-mail адреса не оприлюднюватиметься. Обов’язкові поля позначені</span><span class="required">*</span></p>
+                  <p class="comment-form-comment">
+                    <label>Коментар</label>
+                    <textarea id="comment" required="required" placeholder="Что думаете?"></textarea>
+                  </p>
+                  <p class="comment-form-author">
+                    <label>Ім’я<span class="required">*</span></label>
+                    <input id="author" type="text" value="" maxlength="245">
+                  </p>
+                  <p class="comment-form-email">
+                    <label>Email<span class="required">*</span></label>
+                    <input id="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required">
+                  </p>
+                  <p class="comment-form-url">
+                    <label>Website</label>
+                    <input id="url" name="url" type="url" value="" size="30" maxlength="200">
+                  </p>
+                  <p class="form-submit">
+                    <input class="submit" id="submit" value="Post Comment">
+                    <input id="comment_post_ID" type="hidden" name="comment_post_ID" value="638">
+                    <input id="comment_parent" type="hidden" name="comment_parent" value="0">
+                  </p>
+                </form>
+              </div>
+            </div>
           </div>
           <div class="content-page__aside"></div>
         </div>

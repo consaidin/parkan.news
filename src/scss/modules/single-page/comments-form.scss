@@ -1,0 +1,208 @@
+@import "../../partials/mixins";
+@import "../../partials/params";
+@import "../../partials/elements";
+
+.comment-reply-title {
+  font-size: px-to-rem(18);
+  line-height: px-to-rem(22);
+  position: relative;
+  margin: 0 0 45px 0;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 48px;
+    height: 4px;
+    background: #3575CA;
+
+  }
+}
+
+.comment-notes {
+  margin-bottom: 22px;
+}
+
+#email-notes {
+  font-size: px-to-rem(14);
+  line-height: px-to-rem(20);
+
+}
+
+
+.comment-form-comment, .comment-form-author {
+
+  label {
+    margin-bottom: 8px;
+    display: block;
+    color: #908E8E;
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(18);
+  }
+
+  textarea {
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    min-height: 160px;
+    resize: vertical;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+}
+
+
+.comment-form-url {
+  display: none;
+}
+
+.form-submit {
+  margin-bottom: 30px;
+}
+
+.comment-form-author, .comment-form-email {
+
+
+
+  @include media(600) {
+    display: inline-block;
+    width: calc(100% / 6 * 2.917);
+  }
+
+  @include media(1025) {
+    display: inline-block;
+    width: calc(100% / 6 * 2.901);
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 0 8px;
+  }
+
+}
+
+.comment-form-author {
+  margin-bottom: 28px;
+  @include media(600) {
+    margin-right: 10px;
+  }
+
+  @include media(801) {
+    margin-right: 14px;
+  }
+
+  @include media(1281) {
+    margin-right: 18px;
+  }
+
+}
+
+.comment-form-email {
+  margin-bottom: 32px;
+
+  label {
+    margin-bottom: 8px;
+    display: block;
+    color: #908E8E;
+    font-size: px-to-rem(14);
+    line-height: px-to-rem(18);
+  }
+}
+
+.comment-respond .form-submit #submit {
+  width: 100%;
+  background-color: $main-light-blue;
+  text-align: center;
+  color: $white;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  font-size: px-to-rem(18);
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
