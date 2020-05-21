@@ -106,8 +106,13 @@
     top: 34px;
     left: 0;
     background-color: $main-red;
+    z-index: 1;
+  }
+
+  &__category-link {
     padding: 11px 26px;
     color: $white;
+    display: block;
   }
 
   &__title {
