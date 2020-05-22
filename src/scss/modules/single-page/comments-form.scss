@@ -66,8 +66,6 @@
 
 .comment-form-author, .comment-form-email {
 
-
-
   @include media(600) {
     display: inline-block;
     width: calc(100% / 6 * 2.917);
@@ -127,6 +125,7 @@
   height: 40px;
   font-size: px-to-rem(18);
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 
