@@ -2,6 +2,13 @@ mixin tags-item(text)
     li.article-tags__item
         a(href="#!").article-tags__link=text
 
+mixin article-proposition
+    .article-proposition__item
+        a(href="#!").article-proposition__link
+            .img-overlay
+                img(src='img/articles-proposition.jpg').article-proposition__img
+            h4.article-proposition__title Підтримка Зеленського серед українців зменшується
+
 
 .container
     .container-row
@@ -37,7 +44,13 @@ mixin tags-item(text)
                     +tags-item('#Маріїнський парк')
                     +tags-item('#Офіс президента України')
                     +tags-item('#Офіс президента України')
-            .articles-proposition
+            .article-proposition
+                h3.article-proposition__title-main Схожі матеріали
+                .article-proposition__wrap
+                    +article-proposition
+                    +article-proposition
+                    +article-proposition
+                    +article-proposition
             .comments-area
                 .comment-respond
                     h3.comment-reply-title Залиште коментар

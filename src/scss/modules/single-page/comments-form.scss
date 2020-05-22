@@ -128,6 +128,69 @@
   cursor: pointer;
 }
 
+.article-proposition {
+  margin-bottom: 58px;
+
+  &__wrap {
+
+    @include media(480) {
+      margin: 0 -15px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+
+  &__title-main {
+    @extend .comment-reply-title;
+  }
+
+  &__item {
+    margin-bottom: 28px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media(480) {
+      margin: 0 15px 28px;
+      width: calc(100% / 12 * 6 - 30px);
+    }
+
+    @include media(600) {
+      margin: 0 15px;
+      width: calc(100% / 12 * 3 - 30px);
+    }
+
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__title {
+    font-size: px-to-rem(18);
+    line-height: px-to-rem(22);
+    font-weight: 600;
+    margin-top: 10px;
+
+    @include media(600) {
+      font-size: px-to-rem(14);
+      line-height: px-to-rem(18);
+    }
+
+  }
+
+  &__link {
+    transition-property: color;
+    transition-duration: .6s;
+
+    &:hover {
+      color: $main-blue;
+    }
+  }
+}
 
 
 
