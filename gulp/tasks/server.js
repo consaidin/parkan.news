@@ -8,6 +8,7 @@ module.exports = function () {
             files: ['assets/**/*.*']
         });
         $.gulp.watch('src/scss/**/*.scss', $.gulp.series('scss'))
+        $.gulp.watch('src/css/**/*.css', $.gulp.series('css'))
         $.gulp.watch('src/pug/**/*.pug', $.gulp.series('pug'))
         $.gulp.watch('src/js/**/*.js', $.gulp.series('scripts'))
         $.gulp.watch('src/img/*', $.gulp.series('img-copy'))

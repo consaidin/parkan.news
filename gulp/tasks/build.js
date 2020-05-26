@@ -6,6 +6,6 @@ module.exports = function () {
         'img-copy',
         'scripts',
         'fonts',
-
+        'css',
     ))
 }

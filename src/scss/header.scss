@@ -5,7 +5,8 @@
 .header-top-bg {
   background-color: $main-blue;
   padding: 15px 0;
-
+  position: relative;
+  z-index: 3;
 }
 
 .header-top {
@@ -120,7 +121,7 @@
 
 @include media(480) {
   .header-top {
-
+    z-index: 6;
     &__time {
       display: block;
     }
@@ -135,7 +136,7 @@
     }
 
     &__nav {
-      display: block;
+      display: flex;
     }
   }
 }
@@ -204,8 +205,26 @@
 //  transition: transform .9s ease;
 //}
 
+.header-unpin {
+  transform: translateY(-75px);
+}
 
+.header-unpin-bottom {
+  transform: translateY(-175px);
+}
 
+.header-pin, .header-pin-bottom {
+  transform: translateY(0);
+}
+
+#header-top {
+  transition: transform 0.25s ease-in-out;
+}
+
+#header-bottom {
+  transition: transform 0.85s ease-in-out;
+  z-index: -1;
+}
 
 
 

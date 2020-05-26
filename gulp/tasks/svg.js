@@ -8,21 +8,20 @@ module.exports = function () {
             }))
             .pipe($.cheerio({
                 run: function ($) {
-                    $('[fill]').removeAttr('fill')
-                    $('[stroke]').removeAttr('stroke')
-                    $('[style]').removeAttr('style')
+                    $('[fill]').removeAttr('fill');
+                    $('[stroke]').removeAttr('stroke');
+                    $('[style]').removeAttr('style');
                 },
                 parserOptions: {xmlMode: true}
             }))
             .pipe($.replace('&gt;', '>'))
-            // build svg sprite
             .pipe($.svgSprite({
                 mode: {
                     symbol: {
-                        sprite: 'sprite.svg'
+                        sprite: "sprite.svg"
                     }
                 }
             }))
-            .pipe($.gulp.dest('assets/img'));
+            .pipe($.gulp.dest('assets/img/sprite'))
     })
 }
