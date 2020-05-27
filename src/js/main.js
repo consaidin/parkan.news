@@ -11,7 +11,9 @@ $(function () {
         }
     }))
 
-
+    $('.header-top__burger').on('click', function() {
+        $(this).toggleClass('is-active');
+    });
 })
 
 

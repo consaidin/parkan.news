@@ -14,13 +14,54 @@
       background: $white;
       height: 3px;
       border-radius: 4px;
-      width: 100%;
-      margin-bottom: 4px;
+      width: 28px;
+      margin-bottom: 6px;
+      position: relative;
+      transition-property: background-color;
+      transition-duration: .3s;
 
-      &:nth-of-type(2) {
-        width: 45%;
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 3px;
+        background: $white;
+        bottom: 8px;
+        width: 36px;
       }
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 3px;
+        background: $white;
+        top: 8px;
+        width: 16px;
+
+      }
+
+      &:before, &:after {
+        border-radius: 4px;
+        transition: transform .25s ease-in-out;
+      }
+
     }
+  }
+}
+
+.is-active span {
+  background-color: transparent;
+
+  &:after {
+    transform: rotate(45deg);
+    width: 36px;
+    top: 40%;
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+    top: 40%;
   }
 }
 

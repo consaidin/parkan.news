@@ -4,9 +4,11 @@
 
 .header-top-bg {
   background-color: $main-blue;
-  padding: 15px 0;
   position: relative;
   z-index: 3;
+  box-shadow: 0 6px 10px 2px rgba(0,0,0,0.38);
+  padding: 15px 0;
+
 }
 
 .header-top {
@@ -44,11 +46,12 @@
 
     span {
       position: relative;
+      display: block;
 
       &::after {
         position: absolute;
         content: '';
-        bottom: -18px;
+        bottom: 0;
         left: 0;
         width: 100%;
         height: 6px;
@@ -86,13 +89,14 @@
     font-size: px-to-rem(12);
     line-height: px-to-rem(15);
     text-transform: uppercase;
+    display: block;
     position: relative;
 
     &::after {
       display: none;
       position: absolute;
       content: '';
-      bottom: -17px;
+      bottom: 0;
       left: 0;
       width: 100%;
       height: 6px;
@@ -121,7 +125,7 @@
 
 @include media(480) {
   .header-top {
-    z-index: 6;
+
     &__time {
       display: block;
     }
@@ -131,12 +135,29 @@
 @include media(801) {
   .header-top {
 
+    &-bg {
+      padding: 0;
+    }
+
     &__burger {
       display: none;
     }
 
     &__nav {
       display: flex;
+    }
+
+    &__time {
+
+      span {
+        padding: 28px 0;
+      }
+    }
+  }
+
+  .nav {
+    &__link {
+      padding: 28px 0;
     }
   }
 }
@@ -157,9 +178,9 @@
     &__time {
 
       span {
-
+        padding: 30px 0;
         &::after {
-          bottom: -27px;
+          bottom: 0;
 
         }
       }
@@ -170,11 +191,12 @@
     &__link {
       font-size: px-to-rem(15);
       line-height: px-to-rem(18);
+      padding: 30px 0;
     }
 
     .current-menu-item {
       &::after {
-        bottom: -26px;
+        bottom: 0;
       }
     }
   }
