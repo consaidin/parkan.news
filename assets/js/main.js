@@ -4,7 +4,7 @@ $(function () {
 
         let theTop = $(document).scrollTop()
 
-        if (theTop > 500) {
+        if (theTop > 400) {
             $('.header').addClass('header-fixed')
         } else {
             $('.header').removeClass('header-fixed')
@@ -13,7 +13,20 @@ $(function () {
 
     $('.header-top__burger').on('click', function() {
         $(this).toggleClass('is-active');
-    });
+    })
+
+    $('.header-top__search-icon').on('click', function() {
+        $('.search-top__wrap').toggleClass('is-active-search')
+        $('.search-top__overlay').toggleClass('is-active-search-bg')
+        $('body').toggleClass('body-lock')
+    })
+    $('.search-top__overlay').on('click',function() {
+        $('.search-top__overlay').removeClass('is-active-search-bg')
+        $('.search-top__wrap').removeClass('is-active-search')
+    })
+
+
+
 })
 
 
@@ -23,10 +36,10 @@ $(function () {
     Header Bottom Sticky
 ================================
 */
-var lastKnownScrollYbottom = 0
-currentScrollYbottom = 0
-ticking = false
-idOfHeader = 'header-bottom'
+let lastKnownScrollYbottom = 0,
+currentScrollYbottom = 0,
+ticking = false,
+idOfHeader = 'header-bottom',
 eleHeader = null
 
 

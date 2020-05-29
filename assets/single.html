@@ -10,6 +10,13 @@
   </head>
   <body>
     <header class="header">
+      <div class="search-top__wrap" id="popup">
+        <div class="search-top__form">
+          <input class="search-top__form-input" type="search" name="s" placeholder="Search on site...">
+          <button class="search-top__form-button" type="submit">Search</button>
+        </div>
+      </div>
+      <div class="search-top__overlay"></div>
       <div class="header-top-bg" id="header-top">
         <div class="container">
           <div class="header-top">
@@ -25,7 +32,7 @@
               </ul>
             </nav>
             <div class="header-top__time"><span>Середа 11.12.2019</span></div>
-            <div class="header-top__search">
+            <div class="header-top__search search-top">
               <svg class="header-top__search-icon">
                 <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
               </svg>

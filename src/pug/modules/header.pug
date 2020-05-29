@@ -1,4 +1,9 @@
 header.header
+    .search-top__wrap#popup
+        .search-top__form
+            input(type="search" name="s" placeholder="Search on site...").search-top__form-input
+            button(type="submit").search-top__form-button Search
+    .search-top__overlay
     .header-top-bg#header-top
         .container
             .header-top
@@ -21,7 +26,7 @@ header.header
                             a(href="category-page.html").nav__link Медіа
                 .header-top__time
                     span Середа 11.12.2019
-                .header-top__search
+                .header-top__search.search-top
                     +icon('header-top__search-icon', 'search')
     .header-bottom#header-bottom
         .container
