@@ -3,7 +3,7 @@
 @import "partials/elements";
 
 .search-top {
-
+  z-index: 4;
 
   &__wrap {
     position: fixed;
