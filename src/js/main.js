@@ -28,6 +28,7 @@ $(document).ready(function () {
     $('.search-top__overlay').on('click',function() {
         $('.search-top__overlay').removeClass('is-active-search-bg')
         $('.search-top__wrap').removeClass('is-active-search')
+        $('body').removeClass('body-lock')
     })
 
 
