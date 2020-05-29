@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
 
     $(window).on('scroll load resize', (function () {
 
@@ -12,7 +12,9 @@ $(function () {
     }))
 
     $('.header-top__burger').on('click', function() {
-        $(this).toggleClass('is-active');
+        $(this).toggleClass('is-active')
+        $('.search-top__overlay').removeClass('is-active-search-bg')
+        $('.search-top__wrap').removeClass('is-active-search')
     })
 
     $('.header-top__search-icon').on('click', function() {
@@ -24,6 +26,8 @@ $(function () {
         $('.search-top__overlay').removeClass('is-active-search-bg')
         $('.search-top__wrap').removeClass('is-active-search')
     })
+
+
 
 
 
