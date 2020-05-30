@@ -16,6 +16,7 @@ $(document).ready(function () {
         $('.header-top__nav').toggleClass('header-top__nav--active')
         $('.search-top__overlay').removeClass('is-active-search-bg')
         $('.search-top__wrap').removeClass('is-active-search')
+        $('body').toggleClass('body-lock')
     })
 
     $('.header-top__search-icon').on('click', function() {
