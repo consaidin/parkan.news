@@ -45,6 +45,8 @@ a {
 
 .section {
   margin: 48px 0;
+
+
   @include media(801) {
     margin-bottom: 50px;
   }

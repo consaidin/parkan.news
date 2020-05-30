@@ -108,6 +108,7 @@
     list-style: none;
     padding-left: 20%;
     margin-top: 128px;
+
     @include media(801) {
       display: flex;
       align-items: center;
@@ -171,6 +172,7 @@
 
   @include media(801) {
     font-weight: 400;
+    padding-left: 0;
   }
 
   &::after {
@@ -221,7 +223,7 @@
 
   .nav {
     &__link {
-      padding: 28px 0;
+
     }
   }
 }
