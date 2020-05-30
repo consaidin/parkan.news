@@ -167,6 +167,12 @@
 
 .current-menu-item {
   padding-left: 18px;
+  font-weight: 600;
+
+  @include media(801) {
+    font-weight: 400;
+  }
+
   &::after {
     display: block;
   }
