@@ -13,9 +13,9 @@
     left: 0;
     bottom: 0;
     right: 0;
-    height: 12%;
+    height: calc(100% / 12 * 2);
     width: 100%;
-    padding-top: 16%;
+    padding-top: calc(100% / 12 * 1.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,13 +23,7 @@
     transition-duration: .6s;
     transition-property: top;
 
-    @include media(375) {
-      padding-top: 14%;
-    }
 
-    @include media(480) {
-      padding-top: 11%;
-    }
   }
 
   &__wrap-inner {
