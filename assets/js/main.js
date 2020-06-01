@@ -11,33 +11,45 @@ $(document).ready(function () {
         }
     }))
 
-    $('.header-top__burger').on('click', function() {
+    $('.header-top__burger').on('click', function () {
         $(this).toggleClass('is-active')
         $('.header-top__nav').toggleClass('header-top__nav--active')
         $('.search-top__overlay').fadeOut(300)
         $('.search-top__wrap').removeClass('is-active-search')
+        $('.header-top__close-icon, .opened').removeClass('is-active-search opened')
+        $('.header-top__search-icon').removeClass('closed')
         $('body').toggleClass('body-lock')
     })
 
-    $('.header-top__search-icon').on('click', function() {
+    $('.header-top__search-icon').on('click', function () {
+        $(this).addClass('closed')
+        $('.header-top__close-icon').addClass('opened')
         $('.search-top__wrap').toggleClass('is-active-search')
         $('.header-top__nav').removeClass('header-top__nav--active')
         $('.header-top__burger').removeClass('is-active')
         $('.search-top__overlay').fadeToggle(300)
         $('body').toggleClass('body-lock')
     })
-    $('.search-top__overlay').on('click',function() {
+    $('.search-top__overlay').on('click', function () {
         $('.search-top__overlay').fadeOut(300)
         $('.search-top__wrap').removeClass('is-active-search')
+        $('.header-top__close-icon, .opened').removeClass('is-active-search opened')
+        $('.header-top__search-icon').removeClass('closed')
         $('body').removeClass('body-lock')
     })
 
-
-
+    $('.header-top__close-icon, .opened').on('click', function () {
+        $(this).removeClass('opened')
+        $('.header-top__search-icon').removeClass('closed')
+        $('.header-top__nav').removeClass('header-top__nav--active')
+        $('.header-top__burger').removeClass('is-active')
+        $('.search-top__overlay').fadeOut(300)
+        $('.search-top__wrap').removeClass('is-active-search')
+        $('body').toggleClass('body-lock')
+    })
 
 
 })
-
 
 
 /*
@@ -46,10 +58,10 @@ $(document).ready(function () {
 ================================
 */
 let lastKnownScrollYbottom = 0,
-currentScrollYbottom = 0,
-ticking = false,
-idOfHeader = 'header-bottom',
-eleHeader = null
+    currentScrollYbottom = 0,
+    ticking = false,
+    idOfHeader = 'header-bottom',
+    eleHeader = null
 
 
 const classesBottom = {

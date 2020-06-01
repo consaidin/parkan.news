@@ -4,6 +4,8 @@
 
 .search-top {
   z-index: 4;
+  width: 22px;
+  height: 22px;
 
   &__wrap {
     position: fixed;
@@ -84,8 +86,16 @@
 
 .is-active-search {
   top: 0;
+
 }
 
+.closed {
+  display: none;
+}
+
+.opened {
+  display: block;
+}
 
 .body-lock {
   overflow: hidden;
